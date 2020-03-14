@@ -201,7 +201,7 @@ namespace oop
         //  IMPLEMENT ME
         public static float Dot( Vector2 u, Vector2 v )
         {
-            throw new NotImplementedException();
+            return u.X * v.X + u.Y * v.Y;
         }
 
         //  IMPLEMENT ME?
@@ -247,11 +247,19 @@ namespace oop
             Console.ReadLine();
             */
 
-            /*
+            
             Vector2 u = new Vector2(1.0f, 0.5f);
             Console.WriteLine(u);
+            
+
+            Vector2 v = new Vector2(2.0f, 3.4f);
+            Console.WriteLine(v.X);
+            Console.WriteLine(u);
+            Console.WriteLine(v);
+            Console.WriteLine(Vector2.Dot(u,v));
+
+
             Console.ReadLine();
-            */
         }
     }
 }
